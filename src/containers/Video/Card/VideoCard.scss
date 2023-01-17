@@ -1,0 +1,77 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+    .card-thumb {
+        position: relative;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: var(--divider-color);
+
+        img {
+            display: flex;
+            width: 100%;
+        }
+
+        .card-video-length {
+            position: absolute;
+            bottom: 0.25rem;
+            right: 0.25rem;
+
+            font-size: 0.8rem;
+            padding: 0 0.5rem;
+            border-radius: 0.5rem;
+            background-color: var(--background-color);
+        }
+
+        .card-play {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: var(--text-color);
+
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        &:hover {
+            .card-play {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    .card-content {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        font-weight: 300;
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-author {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+    }
+}

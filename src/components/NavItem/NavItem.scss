@@ -1,0 +1,25 @@
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    .i-icon {
+        font-size: 1.5rem;
+        color: var(--accent-color);
+    }
+
+    &.active {
+        color: var(--accent-color);
+        pointer-events: none;
+    }
+
+    &:hover {
+        background-color: var(--divider-color);
+        color: inherit;
+    }
+}

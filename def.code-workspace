@@ -1,15 +1,15 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
-    "settings": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
-        "files.associations": {
-            "**/*.json": "json",
-            "*.code-workspace": "json"
-        }
+  "folders": [
+    {
+      "path": "."
     }
+  ],
+  "settings": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "files.associations": {
+      "**/*.json": "json",
+      "*.code-workspace": "json"
+    }
+  }
 }
